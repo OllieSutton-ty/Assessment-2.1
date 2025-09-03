@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+      <title> Portfolio </title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Website</title>
+    <Style>
+          h1 {
+        text-align: center;
+        font-size: xx-large;
+        color: rgb(246, 245, 245);
+    background-color: rgb(82, 47, 11);
+   overflow:auto;
+   margin-top: 0%;
+padding-bottom: 5%;
+padding-top: 20px;
+}
+
+ h2 {text-align: center;
+        font-size: x-large;
+    }
+
+.header-border {
+  background-color: rgb(82, 47, 11);
+  width: 100%;
+  height: 60px;
+}
+
+.rounded-border {
+  background-color: rgb(82, 47, 11);
+  width: 100%;
+  height: 80px; 
+  border-radius: 15px;
+}
+     
+        body
+        {background-color: rgb(250, 213, 213);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin:0;
+        color: rgb(82, 47, 11);
+        max-width: 1000;
+        max-height: 1100;
+    }
+
+    .mainNav {
+     width: 100%;
+  overflow: auto;
+background-color: rgb(82, 47, 11);
+}
+  .mainNav a {float: left;
+  padding: 12px;
+  color: rgb(246, 245, 245);
+  text-decoration:double;
+  font-size: 17px;
+  width: 20%; 
+  text-align: center;
+}
+   
+  .mainNav a:hover {
+  background-color: rgb(246, 245, 245);
+  color: rgb(82, 47, 11);
+  border-radius: 8px;
+}
+
+  @media screen and (max-width: 500px) {
+  .mainNav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}}
+       
+        .navBottom {
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+        padding-top: 350px;  
+        position: fixed;
+        z-index:3;
+        top: 0;
+        margin-left: 45px;
+
+    }
+
+    .navBottom a {
+        background-color: rgb(82, 47, 11);
+        color: rgb(246, 245, 245);
+        border-radius: 8px;
+        float:none;
+         text-decoration: none;
+  font-size: 17px;
+  width: 50%; 
+  text-align: center;   
+
+    }
+    .navBottom a:hover { background-color: rgb(82, 47, 11);
+        color: rgb(246, 245, 245);
+     border-radius: 8px;
+     }
+    
+     @media screen and (max-width: 500px){}
+     .navBottom a { float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+     }
+
+a {
+    all: unset;
+}   
+    
+
+.navSide a img {
+       width: 50px;
+       height: auto;
+}
+
+ .navSide {
+
+ height: 30%;
+        max-width: 90px;
+        margin-top: 15%;
+        padding-right: 15px;
+        position: fixed;
+        z-index:2;
+        top: 0;
+        right: 0;
+    border-left: 5px solid rgb(82, 47, 11);
+    border-top: 5px solid rgb(82, 47, 11);
+    border-bottom: 5px solid rgb(82, 47, 11);
+    border-right: none;
+    border-radius: 15px 0px 0px 15px;}
+
+
+.slides {display: none;
+height: 500px;
+width: 600px;
+vertical-align: middle;}
+
+.slides img {
+  height: 400px;
+width: 600px;
+}
+
+.allSlidesCont {
+    max-width: 1000px;
+            position: relative;
+            max-height: 350px;
+}
+
+.slideshow-container {
+            display: flex;
+            align-content: center;
+            justify-content:center;
+            height: 350px;
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            padding-top: 0.5%;
+            padding-bottom: 0%;;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:rgb(82, 47, 11);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 8px 8px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+
+
+.prev:hover, .next:hover {
+  color: rgb(82, 47, 11);
+  background-color: rgb(250, 213, 213);
+}
+
+.text {
+  color:rgb(82, 47, 11);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:rgb(82, 47, 11);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-top: 80px;
+}
+
+.active, .dot:hover {
+  background-color:rgb(82, 47, 11);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 100px) {
+  .prev, .next,.text 
+  {font-size: 11px}
+}
+
+footer {
+            text-align: center;
+        }
+    </Style>
+    <div class="header-border">
+    <h1>Interior Design Unt Thou</h1>
+  </div>
+</head>
+<div class="rounded-border">
+<div class="mainNav">
+<nav>
+    <ul>
+        <a href="newwebsite2.html">Home</a>
+        <a href="aboutuspage2.html">About us</a>
+        <a href="portfoliopage2.html">Portfolio</a>
+        <a href="blog2.html">Our Blog</a>
+    
+
+    </ul>
+</nav>
+</div>
+</div>
+
+<body>
+  <h2> Here's What to Expect</h2>
+
+    <div class="slideshow-container">
+     <div class="allSlidesCont"> 
+<div class="slides fade">
+  <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1756788279995-3p7b1qazv8z-1756788265017_zyu96j_adobestock_459375280.jpeg" style="width: 100%">
+  <div class="text">Businesses</div>
+</div>
+
+<div class="slides fade">
+  <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1755930363134-ptgvu281vva-1755930326612_weppj2_adobestock_713850507.jpeg" style="width:100%">
+  <div class="text">Homes</div>
+</div>
+
+<div class="slides fade">
+  <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1755930798400-4aa15rudxal-1755930765485_yqvpmm_adobestock_593597816.jpeg" style="width:100%">
+  <div class="text">Multi-spaces</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+<div class="navBottom">
+    <a href="booklink2.html" style="font-size: x-large;">Book a Consultation</a>
+</div>
+ <div class="navSide">
+<aside>
+   
+        <ul>
+            <a href="https://au.pinterest.com/">
+            <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1756605254437-yesybij9ad-1756605254641_yxj4oi_pinyteresticon.png"> 
+            </a>
+            <a href="https://www.instagram.com/"> <img src= "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1756605220627-2pzhlyq19v9-1756605220708_apw001_instagramicon.png"></a>
+            <a href="https://www.facebook.com/">
+            <img src="https://pub-141831e61e69445289222976a15b6fb3.r2.dev/1756605405383-qij24tvqb1-1756605405600_w9vsf6_facebookicon.png"></a>
+        </ul> 
+    
+</aside>
+ </div>
+ <br></br>
+<Footer>
+  Royalty-free adobe stock images used.
+</Footer>
+</html>
